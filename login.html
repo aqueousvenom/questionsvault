@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn</title>
+    <style>
+        body{
+            background-image: url('720499.jpg');
+            background-repeat: no-repeat;
+            background-size: 1400px;
+            font-family: Helvetica, Arial;
+            
+        }
+        #box1{
+            
+            display: flex;
+            height: 400px;
+            margin-top: 100px;
+            background: transparent;
+        }
+        #sBranch{
+            height: 20px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            opacity: 0.6;
+            width: 140px;
+            text-align: center;
+            height: 30px;
+        }
+        #box2{
+            
+            background: transparent;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-weight: bold;
+            color: white;
+            font-size: large;
+            border-radius: 8px;
+            padding: 20px;
+            height: 230px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 80px;
+            
+        }
+        button{
+            margin: 5px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            width: 50px;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="display: flex; align-items: stretch;">
+            <div id="topPanel">
+            <img src="logo.png" id="logo" alt="">
+            <p id="mainHead"><b>QVault</b></p>
+            </div>
+        </div>
+    </nav>
+    <div id="box1">
+        <div id="box2">
+        <p style="margin-bottom: 10px;">Select Your Branch:</p>
+        <select name="branch" id="sBranch">
+            <option value="none">None</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="electrical">Electrical</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="civil">Civil</option>
+        </select>
+        <br><br>
+        <p style="margin-bottom: 10px;">Select your Semister:</p>
+        <a href="index.html"><button onclick="sem1(1)">1st</button></a>
+        <button onclick="sem2()">2nd</button>
+        <button onclick="sem3()">3rd</button>
+        <br>
+        <button onclick="sem4()">4th</button>
+        <button onclick="sem5()">5th</button>
+        <button onclick="sem6()">6th</button>
+        </div>
+    </div>
+</body>
+</html>

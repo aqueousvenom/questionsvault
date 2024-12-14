@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: white;
+    
+}
+#topPanel{
+    background-color: transparent;
+    height: 50px;
+    width: 60%;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo{
+    display: inline;
+    width: 50px;
+    margin-left: 10px;
+    display: inline;
+}
+
+#mainHead{
+    
+    margin-left:10px;
+    
+
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1a1d1c;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+#links{
+    width: 85%;
+    
+}
+
+#largeBox{
+   
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+    
+    
+}
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  #links{
+    width: 100%;
+    display: flex;
+    padding-left: 30px;
+  }
+}
+
+#linkTable td{
+
+  text-align: center;
+  border: 2px solid black;
+  
+  
+
+}
+
+#linkTable thead tr{
+  height: 30px;
+  
+  
+  
+  
+}
+
+/* @media screen and (max-width: 500px) {
+  #linkTable{
+    width: 90%;
+    height: 200px;
+    
+   
+  }
+
+}
+
+*/
+
+#table{
+  background-color: red;
+  border-radius: 8px;
+  height: 140px;
+}
+
+footer{
+  text-align: right;
+  font-style: italic;
+  font-size: 10px;
+  color: white;
+  background-color: #1a1d1c;
+  width: 100%;
+  margin: 0;
+  
+}
