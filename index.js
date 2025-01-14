@@ -47,7 +47,7 @@ function redirectToUrl() {
       "entrepreneurship-development-management": "",
       "environmental-studies-disaster-management": "",
       "fundamentals-of-it": ""
-    }
+    },
     "civil": {
       "applied-mechanics": "",
       "building-construction": "",
@@ -105,7 +105,7 @@ function redirectToUrl() {
       "power-system-protection": "",
       "principles-of-electrical-engineering": "",
       "utilization-of-electrical-energy": ""
-    }
+    },
     "electronics": {
       "analog-digital-communication": "",
       "communication-system": "",
@@ -122,7 +122,7 @@ function redirectToUrl() {
       "power-electronics": "",
       "programming-in-c": "",
       "wireless-mobile-communication": ""
-    }
+    },
     "fashion": {
       "accessory-designing": "",
       "apparel-management-quality-control": "",
@@ -135,7 +135,7 @@ function redirectToUrl() {
       "textile-science": "",
       "theory-of-fashion": "",
       "traditional-indian-textiles": ""
-    }
+    },
     "mechanical": {
       "applied-mechanics": "",
       "automobile-engineering": "",
