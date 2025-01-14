@@ -34,15 +34,126 @@ function redirectToUrl() {
   const branch = document.getElementById('sBranch').value;
   const subject = document.getElementById('sSubject').value;
   const urls = {
+    "common": {
+      "applied-chemistry": "",
+      "applied-mathematics-i": "",
+      "applied-mathematics-ii": "",
+      "applied-physics-i": "",
+      "applied-physics-ii": "",
+      "cnc-machines-automation": "",
+      "engineering-graphics": "",
+      "english-communication-skills-i": "",
+      "english-communication-skills-ii": "",
+      "entrepreneurship-development-management": "",
+      "environmental-studies-disaster-management": "",
+      "fundamentals-of-it": ""
+    }
     "civil": {
-      "structural-analysis": "https://example.com/civil/structural-analysis",
-      "fluid-mechanics": "https://example.com/civil/fluid-mechanics",
-      "geotechnical-engineering": "https://example.com/civil/geotechnical-engineering"
+      "applied-mechanics": "",
+      "building-construction": "",
+      "civil-engineering-practices": "",
+      "concrete-technology": "",
+      "construction-management": "",
+      "construction-material": "",
+      "earthquake-resistant-building-construction": "",
+      "estimation-costing": "",
+      "fluid-mechanics": "",
+      "highway-engineering": "",
+      "irrigation-engineering": "",
+      "plumbing-services": "",
+      "railways-bridges-tunnels": "",
+      "rcc-design-drawing": "",
+      "soil-mechanics-foundation-engineering": "",
+      "steel-structures-design-drawing": "",
+      "structural-mechanics": "",
+      "surveying-i": "",
+      "surveying-ii": "",
+      "water-supply-waste-water-engineering": ""
     },
     "computer-science": {
-      "data-structures": "https://example.com/computer-science/data-structures",
-      "algorithms": "https://example.com/computer-science/algorithms",
-      "operating-systems": "https://example.com/computer-science/operating-systems"
+      "advances-in-it": "",
+      "analog-electronics": "",
+      "cloud-computing": "",
+      "computer-networks": "",
+      "computer-organisation-architecture": "",
+      "data-base-management-systems": "",
+      "data-structures-using-c": "",
+      "digital-electronics": "",
+      "multimedia-applications": "",
+      "oops-using-java": "",
+      "operating-systems": "",
+      "programming-in-c": "",
+      "python-programming": "",
+      "software-engineering": "",
+      "web-technologies": ""
+    },
+    "electrical": {
+      "analog-digital-electronics": "",
+      "electric-machines-i": "",
+      "electric-machines-ii": "",
+      "electric-vehicle-technology": "",
+      "electrical-engineering-materials": "",
+      "electrical-measurement-instrumentation": "",
+      "electrical-networks": "",
+      "energy-conservation-audit": "",
+      "estimating-costing-in-electrical-engineering": "",
+      "industrial-electronics-control-of-drives": "",
+      "installation-maintenance-of-electrical-equipment": "",
+      "non-conventional-sources-of-energy": "",
+      "plc-microcontrollers": "",
+      "power-system": "",
+      "power-system-protection": "",
+      "principles-of-electrical-engineering": "",
+      "utilization-of-electrical-energy": ""
+    }
+    "electronics": {
+      "analog-digital-communication": "",
+      "communication-system": "",
+      "computer-networks": "",
+      "digital-electronics": "",
+      "electronic-devices-circuits-i": "",
+      "electronic-devices-circuits-ii": "",
+      "electronic-instruments-measurements": "",
+      "fundamentals-of-electrical-engineering": "",
+      "instrumentation": "",
+      "microprocessors-micro-controllers": "",
+      "optical-fibre-communication": "",
+      "plc-scada": "",
+      "power-electronics": "",
+      "programming-in-c": "",
+      "wireless-mobile-communication": ""
+    }
+    "fashion": {
+      "accessory-designing": "",
+      "apparel-management-quality-control": "",
+      "basic-design-illustration": "",
+      "design-to-dispatch": "",
+      "fashion-merchandising": "",
+      "fashion-retailing": "",
+      "fundamentals-of-pattern-making": "",
+      "history-of-fashion": "",
+      "textile-science": "",
+      "theory-of-fashion": "",
+      "traditional-indian-textiles": ""
+    }
+    "mechanical": {
+      "applied-mechanics": "",
+      "automobile-engineering": "",
+      "basics-of-electrical-electronics-engineering": "",
+      "hydraulics-pneumatics": "",
+      "machine-design": "",
+      "materials-metallurgy": "",
+      "mechanical-engineering-drawing-i": "",
+      "mechanical-engineering-drawing-ii": "",
+      "metrology-quality-control": "",
+      "refrigeration-air-conditioning": "",
+      "strength-of-materials": "",
+      "theory-of-machines": "",
+      "thermodynamics-i": "",
+      "thermodynamics-ii": "",
+      "workshop-technology-i": "",
+      "workshop-technology-ii": "",
+      "workshop-technology-iii": ""
     }
   };
 
