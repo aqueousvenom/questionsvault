@@ -5,89 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Question Vault - Download Old HSBTE Question Papers</title>
-    <style>
-        body{
-            background-image: url('720499.jpg');
-            background-repeat: no-repeat;
-            background-size: 1400px;
-        }
-        
-        #box1{
-            
-            display: flex;
-            height: 400px;
-            margin-top: 100px;
-            background: transparent;
-        }
-        
-        #sBranch{
-            height: 20px;
-            border: none;
-            background-color: black;
-            color: white;
-            border-radius: 4px;
-            opacity: 0.6;
-            width: 140px;
-            text-align: center;
-            height: 30px;
-        }
-        
-        #box2{
-            background: transparent;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            font-weight: bold;
-            color: white;
-            font-size: large;
-            border-radius: 8px;
-            padding: 20px;
-            height: 230px;
-            text-align: center;
-            margin: auto;
-            margin-bottom: 80px;
-        }
-        
-        button{
-            margin: 5px;
-            border: none;
-            background-color: black;
-            color: white;
-            border-radius: 4px;
-            width: 50px;
-            height: 30px;
-        }
-        
-    </style>
+    <title>Questions Vault - Download Old HSBTE Question Papers for free</title>
 </head>
 <body>
     <nav>
-        <div style="display: flex; align-items: stretch;">
-            <div id="topPanel">
-            <img src="logo.png" id="logo" alt="">
-            <p id="mainHead"><b>QVault</b></p>
-            </div>
-        </div>
+        <a href=""><img src="shape_line.svg" id="logo" alt="Questions Vault - logo"></a>
+        <a href="" style="float: right; margin: 0 30px 0 0;">Something is wrong? Contact Us</a>
     </nav>
     <div id="box1">
         <div id="box2">
-        <p style="margin-bottom: 10px;">Select Your Branch:</p>
-        <select name="branch" id="sBranch">
-            <option value="none">None</option>
-            <option value="computer-science">Computer Science</option>
-            <option value="electrical">Electrical</option>
-            <option value="mechanical">Mechanical</option>
-            <option value="civil">Civil</option>
-        </select>
-        <br><br>
-        <p style="margin-bottom: 10px;">Select your Semister:</p>
-        <a href="page1.html"><button onclick="sem1(1)">1st</button></a>
-        <a href="page1.html"><button onclick="sem2()">2nd</button></a>
-        <a href="page1.html"><button onclick="sem3()">3rd</button></a>
-        <br>
-        <a href="page1.html"><button onclick="sem4()">4th</button></a>
-        <a href="page1.html"><button onclick="sem5()">5th</button></a>
-        <a href="page1.html"><button onclick="sem6()">6th</button></a>
+            <label for="branch">Choose your Branch</label>
+            <br>
+            <select name="branch" id="sBranch">
+                <option value="none">None</option>
+                <option value="common">Common</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="computer-science">Computer Science Engineering</option>
+                <option value="electrical">Electrical Engineering</option>
+                <option value="electronics">Electronics & Communication Engineering</option>
+                <option value="fashion">Fashion Designing</option>
+                <option value="mechanical">Mechanical Engineering</option>
+            </select>
+            <br><br>
+            <label for="subject">Choose Subject</label>
+            <br>
+            <select name="subject" id="sSubject">
+                <option value="none" selected>None</option>
+            </select>
+            <br><br>
+            <button onclick="redirectToUrl()" id="subjectButton" disabled="true">Download Subject Papers</button>
+            <p style="margin: 8px auto; text-align: center;">Or</p>
+            <button onclick="redirectToBranchUrl()" id="branchButton" disabled="true">Download Complete Branch Papers</button>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
